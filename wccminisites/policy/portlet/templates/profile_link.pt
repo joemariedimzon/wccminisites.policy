@@ -5,7 +5,7 @@
         <div id="prof-img">
             <img tal:attributes="src python: user['portrait']" alt="" class="portraitPhoto" width="200">
         </div>
-        <ul id="prof-info">
+        <ul id="prof-info" style="word-wrap:break-word;margin-left:0">
             <li tal:define="fullname python: user['fullname']" tal:content="python: fullname.title()"></li>
             <li tal:condition="python: user['church']"><span tal:content="python: user['church']"></span></li>
             <li tal:content="python: user['country']"></li>
